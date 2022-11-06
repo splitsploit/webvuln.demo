@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <% include ../imports.ejs %>
+
+    <title>SQL playground</title>
+
+    <script src="../../javascripts/playground.js" async></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2/webcomponents-loader.min.js"></script>
+
+<!-- Load the element definition -->
+<script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js"></script>
+</head>
+
+<body>
+    <% include ../nav.ejs %>
+
+        <div class="display-3 m-2 text-center p-2">
+            <span class="fw-bold">SQL Injection</span> Tutorial
+        </div>
+
+        <zero-md src="../../SQLInject.md"></zero-md>
+</body>
+
+</html>

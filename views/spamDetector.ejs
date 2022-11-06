@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <% include ./imports.ejs %>
+
+        <title>Spam Detector</title>
+
+        <script src="./javascripts/spamDetect.js" async></script>
+
+        <style>
+            body {
+                background: linear-gradient(to right, #acb6e5, #86fde8);
+            }
+
+            .font-good {
+                color: #869af2;
+            }
+
+            #outer{
+                margin-top: 6.5em;
+            }
+
+            textarea{
+                font-size: .9em !important;
+            }
+        </style>
+</head>
+
+<body>
+    <% include ./nav.ejs %> 
+
+        <div id="outer" class="m-3">
+            <div class="bg-white rounded shadow-lg p-2">
+                
+                <div class="display-4 fw-bold text-secondary text-center">
+                    Spam Checker
+                </div>
+
+                <div class="mt-2 p-3 w-100">
+                    <form id="spam-form">
+                                              
+                        <!-- Account Number input -->
+                        <div class="form-outline mb-4">
+                            <label class="form-label" for="spam-text">Spam Detector</label>
+                            <textarea type="text" id="spam-text" class="form-control text-small form-control-lg w-100"
+                                placeholder="Enter email body" rows="10">
+                            </textarea>
+                        </div>
+                        
+                        <div id="form-message-info" class="p-2">
+                        </div>
+
+                        <div class="text-center text-lg-start mt-4 p-2">
+                            <button type="submit" id="spam-btn" class="btn btn-outline-primary btn-lg"
+                                style="padding-left: 2.5rem; padding-right: 2.5rem;">Check Spam</button>
+                        </div>
+
+    
+                    </form>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

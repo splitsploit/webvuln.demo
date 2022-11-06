@@ -1,0 +1,49 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark p-2">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">Vulnerable</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+       data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse"
+       id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/ddos">Ddos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" 
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                SQL Injection
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <!-- <a class="dropdown-item" href="/sql">Docs</a> -->
+                <a class="dropdown-item" href="/sql/playground">Playground</a>
+                <a class="dropdown-item" href="/sql/Tutorial">Tutorial</a>
+              </div>
+  
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/spam-detect">Spam Detector</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/csrf">CSRF</a>
+            </li>
+            
+            <% if (locals.acc_no) {%> 
+              <li class="nav-item">
+                <a class="nav-link active" href="/csrf/transfer">
+                  <%- acc_no %> 
+                </a>
+              </li> 
+            <% } %>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>

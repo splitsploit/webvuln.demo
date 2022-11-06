@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <% include ./imports.ejs %> 
+
+  <!-- <link rel="stylesheet" href="styles\main.css"> -->
+  <title>ISAA Project</title>
+</head>
+
+<body>
+  <!-- Image and text -->
+  <% include ./nav.ejs %> 
+
+
+  <section class="d-flex align-items-center justify-content-start m-2 p-2">
+    <div class="d-flex align-items-center justify-content-center">
+      <div class="image">
+        <!-- <img src="./content/assets/team3.png" alt="" width="760px" height="458px"> -->
+      </div>
+
+      <div>
+        <div class="display-4 text-primary fw-semibold"> Abstract</div>
+        <p>Cyber security is necessary to protect personal data, networks,
+          and personal systems from unauthorized access and protect data from misuse. Cyber security
+          consists of technologies, processes and measures that are designed to protect systems,
+          networks, and data damage from cybercrimes. Effective cyber security reduces the risk of a
+          successful cyberattack and protects data, organizations and individuals from the planned misuse
+          of systems, networks and technologies. Every year many individuals and organizations suffer
+          from cyberattacks, which include data loss, information hacks, transaction problem, and
+          unauthorized access of information or data. The frequency of these attacks is increasing day by
+          day and it's creating a lot of problems or threats in our life. These attacks can be extremely
+          damaging to businesses as well as people. Therefore, we must know about cyberattacks and their
+          preventive measures as many of us are still unaware about it. The objective of this paper is to
+          create awareness of the various types of cyber-attacks and lay the foundation for their cyber
+          security planning</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="row gap-2 p-2 m-2">
+      <div class="col card bg-light">
+        <div class="card-body">
+          <h5 class="card-title">SQL Injection</h5>
+          <p class="card-text">SQL injection usually occurs when you ask a user for input, like their username/userid,
+            and instead of a name/id, the user gives you an SQL statement that you will unknowingly run on your database
+            and Destroy.</p>
+          <a href="/sql/playground" class="btn btn-outline-primary">Click here</a>
+        </div>
+      </div>
+      <div class="col card bg-light">
+        <div class="card-body">
+          <h5 class="card-title">DDOS Attacks</h5>
+          <p class="card-text">A DDOS attack occurs when multiple systems flood the
+            bandwidth or resources of a targeted system, usually one or more web servers. It is an attack
+            meant to shut down a machine or network, making it inaccessible to its intended users.</p>
+          <a href="/ddos" class="btn btn-outline-primary">Click here</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
